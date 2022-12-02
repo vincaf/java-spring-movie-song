@@ -26,6 +26,9 @@ public class MainController {
 	@GetMapping("/best-song")
 	public String getBestSong(Model model) {
 		
+		String name = "vincaf";
+		model.addAttribute("name", name);
+		
 		List<Song> songs = new ArrayList<>();
 		songs.add(new Song(1, "No More Tears - Ozzy Osbourne"));
 		songs.add(new Song(2, "Are You Gonna Go My Way - Lenny Kravitz"));
@@ -39,6 +42,9 @@ public class MainController {
 	
 	@GetMapping("/best-movie")
 	public String getBestMovie(Model model) {
+		
+		String name = "vincaf";
+		model.addAttribute("name", name);
 		
 		List<Movie> movies = new ArrayList<>();
 		movies.add(new Movie(1, "The Godfather"));
