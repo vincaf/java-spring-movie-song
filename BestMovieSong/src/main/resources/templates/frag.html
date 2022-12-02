@@ -12,8 +12,8 @@
 			</li>
 		</ul>
 		
-		<ul	th:fragment="movies(ms)">
-			<li th:each="movie : ${ms}"	
+		<ul class="list-group" th:fragment="movies(ms)">
+			<li class="list-group-item" th:each="movie : ${ms}"	
 				th:object="${movie}">
 				[[*{id}]] - [[*{title}]]
 			</li>
