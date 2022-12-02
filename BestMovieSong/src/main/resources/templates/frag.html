@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>frag</title>
+	</head>
+	<body>
+		<ul	th:fragment="songs(s)">
+			<li th:each="song : ${s}"	
+				th:object="${song}">
+				[[*{id}]] - [[*{title}]]
+			</li>
+		</ul>
+		
+		<ul	th:fragment="movies(ms)">
+			<li th:each="movie : ${ms}"	
+				th:object="${movie}">
+				[[*{id}]] - [[*{title}]]
+			</li>
+		</ul>
+	</body>
+</html>
