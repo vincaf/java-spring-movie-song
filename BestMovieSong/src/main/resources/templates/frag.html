@@ -5,8 +5,8 @@
 		<title>frag</title>
 	</head>
 	<body>
-		<ul	th:fragment="songs(s)">
-			<li th:each="song : ${s}"	
+		<ul class="list-group" th:fragment="songs(s)">
+			<li class="list-group-item" th:each="song : ${s}"	
 				th:object="${song}">
 				[[*{id}]] - [[*{title}]]
 			</li>
